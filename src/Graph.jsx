@@ -1,4 +1,5 @@
 import Column from "./Column"
+import StandartColumn from "./StandartColumn"
 
 let totalHeight = 265
 
@@ -15,6 +16,7 @@ function Graph(props) {
             <Column item={props.data.dev} totalHeight={totalHeight} maxTotal={maxTotal} name="dev"/>
             <Column item={props.data.test} totalHeight={totalHeight} maxTotal={maxTotal} name="test"/>
             <Column item={props.data.prod} totalHeight={totalHeight} maxTotal={maxTotal} name="prod"/>
+            <StandartColumn value={props.data.norm} totalHeight={totalHeight} maxTotal={maxTotal}/>
         </div>
     </div>
 }

@@ -1,6 +1,8 @@
 + placeholder for loading
 + fetch data
 + calculate sizes for columns
-border radius column
++ border radius column
 svg arrows
-norm column
+norm column background
+fonts
+bottom comments
