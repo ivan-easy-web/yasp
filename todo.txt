@@ -1,0 +1,6 @@
++ placeholder for loading
++ fetch data
++ calculate sizes for columns
+border radius column
+svg arrows
+norm column
