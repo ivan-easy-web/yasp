@@ -2,7 +2,7 @@
 function StandartColumn(props) {
     return <div className="column">
 
-        <div className="standart-column-item" style={{height: (props.value / props.maxTotal * props.totalHeight)}}>
+        <div className="standart-column-item column-item" style={{height: (props.value / props.maxTotal * props.totalHeight)}}>
             <p>{props.value}</p>
         </div>
         
