@@ -12,7 +12,7 @@
 + zero badge center text 
 + norm column background
 
-fix arrows for data with 0
+? fix arrows for data with 0
 
 
 

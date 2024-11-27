@@ -13,7 +13,6 @@ function UrlMenu(props) {
             <ListGroup.Item onClick={() => handleClick(1)}>OS Bombuntu</ListGroup.Item>
             <ListGroup.Item onClick={() => handleClick(2)}>Mibre Office</ListGroup.Item>
             <ListGroup.Item onClick={() => handleClick(3)}>LoWtEx</ListGroup.Item>
-            <ListGroup.Item onClick={() => handleClick(4)}>W$ POS</ListGroup.Item>
         </ListGroup>
     </div>
 }
