@@ -1,3 +1,4 @@
+import Arrows from "./Arrows";
 import Column from "./Column"
 import StandartColumn from "./StandartColumn"
 import { BsThreeDots } from "react-icons/bs";
@@ -16,6 +17,7 @@ function Graph(props) {
             <h3 className="header">Количество пройденных тестов "{props.data.title}"</h3>
             <BsThreeDots />
         </div>
+        <Arrows data={props.data} totalHeight={totalHeight} maxTotal={maxTotal}/>
         <div className="row">
             <Column item={props.data.dev} totalHeight={totalHeight} maxTotal={maxTotal} name="dev"/>
             <Column item={props.data.test} totalHeight={totalHeight} maxTotal={maxTotal} name="test"/>
