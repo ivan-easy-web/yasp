@@ -59,13 +59,16 @@ body {
 }
 
 .header {
-  color: #898290;
-  font-weight: 500;
-  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 40px;
+}
+
+h3 {
+  color: #898290;
+  font-weight: 500;
+  font-size: 16px;
 }
 
 .header h3 {

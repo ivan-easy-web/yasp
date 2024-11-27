@@ -23,6 +23,7 @@ function App() {
   }, [])
 
   const changeUrl = (url) => {
+    setData(null);
     fetch(url)
       .then((res) => {
         return res.json();
