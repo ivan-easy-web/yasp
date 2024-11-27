@@ -6,6 +6,7 @@
 + fonts
 + cardview
 + bottom comments
++ menu
 
 fix arrows for data with 0
 norm column background

@@ -1,9 +1,12 @@
+import { useState } from "react";
 import Arrows from "./Arrows";
 import Column from "./Column"
 import StandartColumn from "./StandartColumn"
 import { BsThreeDots } from "react-icons/bs";
+import UrlMenu from "./UrlMenu";
 
-let totalHeight = 265
+let totalHeight = 265;
+let menuLeftOffset = '0px';
 
 function Graph(props) {
     let maxTotal = Math.max(
@@ -12,10 +15,24 @@ function Graph(props) {
         props.data.prod.front + props.data.prod.back + props.data.prod.db
     )
 
+
+
+    const [menuOpened, setMenuOpened] = useState(false);
+
+    const toggleMenu = () => {
+        setMenuOpened(!menuOpened);
+    }
+
+    const handleButtonClick = (event) => {
+        menuLeftOffset = event.pageX - 220 + 'px';
+        toggleMenu();
+    }
+
     return <div className="graph">
+        {menuOpened && <UrlMenu changeUrl={props.changeUrl} urls={props.urls} toggleMenu={toggleMenu} style={{left: menuLeftOffset}}/>}
         <div className="header">
             <h3 className="header">Количество пройденных тестов "{props.data.title}"</h3>
-            <BsThreeDots />
+            <BsThreeDots onClick={handleButtonClick}/>
         </div>
         <Arrows data={props.data} totalHeight={totalHeight} maxTotal={maxTotal}/>
         <div className="row">

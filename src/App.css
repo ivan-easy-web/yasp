@@ -29,6 +29,31 @@ body {
   }
 }
 
+.toggle-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1002;
+}
+
+.url-menu {
+  position: fixed;
+  top: 25px;
+  width: 200px;
+  z-index: 1003;
+}
+
+.url-menu div {
+  color: #898290;
+}
+
+.url-menu div:hover {
+  cursor: pointer;
+  color: black;
+}
+
 .header {
   color: #898290;
   font-weight: 500;
