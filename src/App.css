@@ -54,6 +54,10 @@ body {
   color: black;
 }
 
+.menu-button:hover {
+  cursor: pointer;
+}
+
 .header {
   color: #898290;
   font-weight: 500;

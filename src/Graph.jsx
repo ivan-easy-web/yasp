@@ -12,7 +12,8 @@ function Graph(props) {
     let maxTotal = Math.max(
         props.data.dev.front + props.data.dev.back + props.data.dev.db, 
         props.data.test.front + props.data.test.back + props.data.test.db, 
-        props.data.prod.front + props.data.prod.back + props.data.prod.db
+        props.data.prod.front + props.data.prod.back + props.data.prod.db,
+        props.data.norm
     )
 
 
