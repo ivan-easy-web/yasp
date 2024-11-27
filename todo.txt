@@ -3,9 +3,11 @@
 + calculate sizes for columns
 + border radius column
 + svg arrows
++ fonts
++ cardview
++ bottom comments
+
 fix arrows for data with 0
 norm column background
-fonts
-cardview
-+ bottom comments
 zero badge center text 
+mobile scaling
