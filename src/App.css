@@ -130,8 +130,9 @@ body {
   margin-left: 2px;
 }
 
-.badge-zero {
-  
+.badge-zero span {
+  width: 100%;
+  text-align: center;
 }
 
 #badge-0 {

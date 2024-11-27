@@ -51,7 +51,7 @@ function Graph(props) {
         {menuOpened && <UrlMenu changeUrl={props.changeUrl} urls={props.urls} toggleMenu={toggleMenu} style={{left: menuLeftOffset}}/>}
         <div className="header">
             <h3 className="header">Количество пройденных тестов "{props.data.title}"</h3>
-            <BsThreeDots onClick={handleButtonClick}/>
+            <BsThreeDots onClick={handleButtonClick} className="menu-button"/>
         </div>
         <Arrows data={props.data} totalHeight={totalHeight} maxTotal={maxTotal} small={checkSmallWindow()}/>
         <div className="row">
