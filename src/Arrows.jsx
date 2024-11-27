@@ -50,19 +50,36 @@ function Arrows(props) {
             }
         </div>
         <div className="arrows">
-            <svg width="480" height="327">
-                <line x1="60" x2="60" y1={y0} y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="60" x2="170" y1="12" y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="170" x2="170" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="170" x2="174" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
-                <line x1="170" x2="166" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
+            {!props.small && 
+                <svg width="480" height="327">
+                    <line x1="60" x2="60" y1={y0} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="60" x2="170" y1="12" y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="170" x2="170" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="170" x2="174" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
+                    <line x1="170" x2="166" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
 
-                <line x1="190" x2="190" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="190" x2="300" y1="12" y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="300" x2="300" y1={y2} y2="12" stroke="black" strokeWidth="1"/>
-                <line x1="300" x2="304" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
-                <line x1="300" x2="296" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
-            </svg>
+                    <line x1="190" x2="190" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="190" x2="300" y1="12" y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="300" x2="300" y1={y2} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="300" x2="304" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
+                    <line x1="300" x2="296" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
+                </svg>
+            }
+            {props.small && 
+                <svg width="320" height="327">
+                    <line x1="40" x2="40" y1={y0} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="40" x2="110" y1="12" y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="110" x2="110" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="110" x2="113" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
+                    <line x1="110" x2="107" y1={y1} y2={y1 - 4} stroke="black" strokeWidth="1"/>
+
+                    <line x1="125" x2="125" y1={y1} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="125" x2="200" y1="12" y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="200" x2="200" y1={y2} y2="12" stroke="black" strokeWidth="1"/>
+                    <line x1="200" x2="203" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
+                    <line x1="200" x2="197" y1={y2} y2={y2 - 4} stroke="black" strokeWidth="1"/>
+                </svg>
+            }
         </div>
     </>
 }
