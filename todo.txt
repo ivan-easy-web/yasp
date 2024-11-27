@@ -10,9 +10,10 @@
 + fix arrow when norm is max
 + mobile scaling
 + zero badge center text 
++ norm column background
 
 fix arrows for data with 0
-norm column background
+
 
 
 ? displaying graph for huge number 
